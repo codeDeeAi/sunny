@@ -1,0 +1,32 @@
+/* ============ */
+@media screen and (max-width:993px) {
+  .navOne{
+    display: none;
+  }
+}
+
+@media screen and (min-width:993px) {
+  .navbar-brand{
+    display: none;
+  }
+}
+@media screen and (max-width:350px){
+  .preload{
+    width: 100%;
+  }
+  body{
+    font-size: 12px;
+  }
+  h5{
+    font-size: 14px;
+  }
+  .alps{
+    padding: auto 0px;
+  }
+  .SectionThree .col{
+    display: none;
+  }
+  footer span{
+    font-size: 10px;
+  }
+}

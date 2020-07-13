@@ -1,0 +1,133 @@
+body{
+  overflow-x: hidden;
+  padding:0px;
+  margin: 0px;
+}
+
+/* ============PRELOADER==============  */
+.preload{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/Gifs/sunny.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+
+.preload.hidden{
+    animation: fadeout 3s;
+    animation-fill-mode:forwards ;
+}
+
+@keyframes fadeout{
+    100%{
+         opacity: 0;
+         visibility: hidden;
+    }
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* ============PRELOADER ENDS==============  */
+
+/* ============NAVIGATION==============  */
+.navbar img{
+    height: 80px;
+}
+.navbar-toggler{
+    border: 1px solid black;
+}
+
+.navbar ul{
+    margin: auto;
+
+}
+.navbar ul li{
+    margin: auto;
+    text-transform: uppercase;
+}
+.navbar ul a{
+    color: black;
+}
+.navbar ul li:hover{
+    padding-bottom: 2px;
+    padding-right: 2px;
+    border-bottom: 1px solid #F05E23;
+    border-right: 1px solid #F05E23;
+}
+.navbar ul a:active,
+.navbar ul a:hover{
+    color: #F05E23;
+}
+.dropdown-menu{
+  background-color: #F05E23;
+}
+/* ===========carousel============== */
+.sectionTwo{
+    margin: 2% auto;
+}
+.sectionThree,
+.SectionThree,
+.SectionFour,
+footer{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.miniCarouselOne{
+    padding: 10% auto;
+}
+
+/* ============Section Three======= */
+.img-hover{
+  margin: 1% auto;
+}
+.img-hover a:hover{
+  opacity: .5;
+}
+/* =============Section Four======== */
+.SectionFour{
+  background-image: url(../images/ent1.jpg);
+  background-repeat: no-repeat;
+}
+.alps{
+  margin: 10% auto;
+}
+
+/* =============Footer============= */
+footer ul{
+  display: flex;
+  list-style: none;
+  padding-left:0px;
+  margin: 5% auto;
+}
+footer ul li{
+  margin: auto;
+}
+.footerSpan{
+    text-align: center;
+}
+footer span{
+  font-weight: bold;
+  font-size: 12px;
+  margin: auto;
+}
+footer span a{
+  color: black;
+  font-style: italic;
+}
+footer span a:hover{
+  font-size: 12px;
+  text-decoration: none;
+}
